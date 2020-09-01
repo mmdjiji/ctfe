@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>CTFe - Deployed by CTFe</title>
+    <link rel="stylesheet" href="lib/app.css" />
+    <link rel="stylesheet" href="lib/theme-chalk/index.css" />
+    <script src="lib/vue.js"></script>
+    <script src="lib/index.js"></script>
+    <script src="lib/md5.js"></script>
+  </head>
+  <body>
+    <div id="app" style="height: 100vh;">
+      <el-scrollbar style="height: 101%;">
+        <h1 class="main" style="margin:35px auto auto auto;">CTFe</h1>
+        <div id="problems" class="main"></div>
+        <el-dialog :visible.sync="show_visible" v-bind:title="show_title">
+          <div v-html="show_intro">{{show_intro}}</div>
+          <el-form :inline="true" class="demo-form-inline" style="margin: 30px auto 0 auto;">
+            <el-form-item>
+              <el-input placeholder="请输入flag" v-model="show_flag" clearable></el-input>
+            </el-form-item>
+            <el-form-item>
+              <el-button type="primary" @click="onSubmit">验证</el-button>
+            </el-form-item>
+          </el-form>
+        </el-dialog>
+        
+        <!-- 本版权信息请勿删除，否则视为违反开源协议 -->
+        <div class="main" style="margin:35px auto 30px auto;">
+          Deployed by <a href="https://github.com/mmdjiji/ctfe">CTFe</a>(<a href="https://github.com/mmdjiji">Author: JiJi</a>) in <a href="https://choosealicense.com/licenses/gpl-3.0/">GPLv3.0</a> license.
+        </div>
+      </el-scrollbar>
+    </div>
+  </body>
+  <script src="lib/app.js"></script>
+</html>

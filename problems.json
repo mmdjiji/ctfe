@@ -1,0 +1,26 @@
+[
+  {
+    "title": "签到题",
+    "category": "Misc",
+    "intro": "这是一道用于测试的签到题，flag{mmdjiji}",
+    "flag": "98ac2c421a41a84fe1e15287ee8e93bf"
+  },
+  {
+    "title": "Base64",
+    "category": "Misc",
+    "intro": "ZmxhZ3t0aGlzX2lzX2Jhc2U2NH0=",
+    "flag": "0361988fcbb1da77dbeecb51ff071367"
+  },
+  {
+    "title": "EasyCrypto",
+    "category": "Crypto",
+    "intro": "这是一道很简单的密码学题<br><a href='files/EasyCrypto.py'>下载附件</a>",
+    "flag": "813a626af3a38f8727a66aba2d5c2ed3"
+  },
+  {
+    "title": "EasyRe",
+    "category": "Reverse",
+    "intro": "逆向的签到题<br><a href='files/EasyRe.exe'>下载附件</a>",
+    "flag": "fa3edcb7fcf499c73b5584f265147f6d"
+  }
+]
