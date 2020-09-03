@@ -16,9 +16,9 @@
         <div id="problems" class="main"></div>
         <el-dialog :visible.sync="show_visible" v-bind:title="show_title">
           <div v-html="show_intro">{{show_intro}}</div>
-          <el-form :inline="true" class="demo-form-inline" style="margin: 30px auto 0 auto;">
+          <el-form :inline="true" class="demo-form-inline" style="margin: 30px auto 0 auto;" @submit.native.prevent>
             <el-form-item>
-              <el-input placeholder="请输入flag" v-model="show_flag" clearable></el-input>
+              <el-input placeholder="请输入flag" v-model="show_flag" clearable @keyup.enter.native="onSubmit"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="onSubmit">验证</el-button>
